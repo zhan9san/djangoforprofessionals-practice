@@ -18,6 +18,11 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta: # new
+        permissions = [
+            ('special_status', 'Can read all books'),
+        ]
+
     def get_absolute_url(self): # new
         return reverse('book_detail', args=[str(self.id)])
 
