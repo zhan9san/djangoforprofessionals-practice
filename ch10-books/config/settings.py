@@ -167,3 +167,6 @@ ACCOUNT_USERNAME_REQUIRED = False # new
 ACCOUNT_AUTHENTICATION_METHOD = 'email' # new
 ACCOUNT_EMAIL_REQUIRED = True # new
 ACCOUNT_UNIQUE_EMAIL = True # new
+
+MEDIA_URL = '/media/'  # new
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # new
