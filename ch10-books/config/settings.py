@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'books', # new
+    'orders',
 ]
 
 MIDDLEWARE = [
